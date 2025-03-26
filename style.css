@@ -493,10 +493,87 @@ footer .links{
     width: 50%;
     justify-content: flex-end;
 }
-@media screen and (max-width:768px) {
-    
+
+@media screen and  (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .links,
+    .buttons {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .home {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .products-div,
+    .companies-logo,
+    .testimonials,
+    .apps,
+    .statistics {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mobile-interface {
+        flex-direction: column;
+    }
+
+    .mobile,
+    .right {
+        width: 100%;
+    }
+
+    footer .links {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
+@media (min-width: 1025px) {
+    .container {
+        width: 85%;
+    }
 
+    .links,
+    .buttons {
+        width: 50%;
+    }
 
+    .home {
+        gap: 10%;
+    }
 
+    .products-div,
+    .companies-logo,
+    .testimonials,
+    .apps,
+    .statistics {
+        flex-direction: row;
+        gap: 5%;
+    }
+
+    .mobile-interface {
+        flex-direction: row;
+    }
+
+    .mobile,
+    .right {
+        width: 40%, 60%;
+    }
+}
