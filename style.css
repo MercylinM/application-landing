@@ -102,7 +102,7 @@ p {
     width: 50%;
 }
 
-.right h1 span{
+h1 span{
     color: red;
     text-decoration: underline;
 }
@@ -145,7 +145,7 @@ p {
 }
 
 
-.left{
+.home .left{
     width: 50%;
     position: relative;
     transform: rotate(-10deg);
@@ -274,6 +274,7 @@ p {
     display: flex;
     justify-content: space-between;
     gap: 5%;
+    padding: 5%;
 }
 
 .products h2 span{
@@ -311,12 +312,190 @@ p {
 .product:nth-child(3) i{
     background-color: #f3cac4;
     font-size: 20px;
-    /* background-color: #97e9f4; */
     padding: 10px;
     border-radius: 50%;
+}
+
+/* statistics section */
+.statistics{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+    margin: 5% auto;
+}
+
+
+.numbers{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+}
+
+.numbers .bolded{
+    font-size: 50px;
+}
+
+.title h1{
+    text-align: center;
+}
+
+.mobile-interface{
+    width: 90%;
+    margin: 5% auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile{
+    width: 40%;
+}
+
+.mobile i{
+    color: #ff0095;
+    font-size: 32px;
+    padding-left: 20px;
+}
+
+.mobile h3{
+    color: #262849;
+}
+
+.mobile button{
+    padding: 15px 30px;
+    color: white;
+    background-color: #262849;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.mobile-interface .right{
+    display: flex;
+    width: 60%;
+    transform: rotate(10deg);
+    gap: 10%;
+}
+
+.right .settings{
+    width: 50%;
+    margin-top: 5%;
+}
+
+.settings i{
+    font-size: 24px;
+}
+
+.settings .user,.settings .language{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.call-to-ation{
+    width: 50%;
+} 
+
+.female-user img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* testimonials */
+.testimonials{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    gap: 10%;
+    margin: 0 auto 5%;
+    align-items: center;
+}
+
+.client{
+    border: solid 1px #ff0095;
+    padding: 5%;
+    border-radius: 20px;
 
 }
 
+
+.profile{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.apps{
+    display: flex;
+    justify-content: space-between;
+}
+
+.illustrator-image{
+    width: 50%;
+    height: 50vh;
+    /* padding: 5%; */
+    border-radius: 20px;
+}
+
+.illustrator-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.apps span, .apps a{
+    text-decoration: underline;
+    color: #262849;
+    font-weight: 600;
+}
+
+footer{
+    background-color: #262849;
+    color: white;
+}
+
+footer .socials{
+    display: flex;
+    gap: 10%;
+    align-items: center;
+
+}
+
+footer .links{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 5% auto;
+}
+
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1A1A1D;
+    padding: 0 10%;
+}
+.terms{
+    display: flex;
+    gap: 10%;
+    width: 50%;
+    justify-content: flex-end;
+}
+@media screen and (max-width:768px) {
+    
+}
 
 
 
