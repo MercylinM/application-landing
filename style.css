@@ -487,6 +487,7 @@ footer .links{
     background-color: #1A1A1D;
     padding: 0 10%;
 }
+
 .terms{
     display: flex;
     gap: 10%;
@@ -494,21 +495,25 @@ footer .links{
     justify-content: flex-end;
 }
 
+/* Mobile menu */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 @media screen and  (max-width: 768px) {
-    .container {
-        width: 95%;
-    }
 
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .links,
-    .buttons {
+    nav .links,
+    nav .buttons {
+        display: none;
         width: 100%;
         flex-direction: column;
         gap: 10px;
+    }
+
+    .hamburger{
+        display: flex;
     }
 
     .home {
@@ -544,6 +549,8 @@ footer .links{
         gap: 20px;
     }
 }
+
+
 
 @media (min-width: 1025px) {
     .container {
